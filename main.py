@@ -10,7 +10,7 @@ from keras.models import Sequential
 from core.data import Data
 from dataset.train_data import TrainData
 from dataset.validate_data import ValidateData
-
+from visualize.visual import Visual
 
 def main() -> None:
     data = Data()
@@ -19,6 +19,10 @@ def main() -> None:
 
     trainData = TrainData()
     valData = ValidateData()
+    visual = Visual()
+
+    visual.visual_show()
+
 
 if __name__ == "__main__":
     main()
