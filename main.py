@@ -21,8 +21,12 @@ def main() -> None:
     valData = ValidateData()
     visual = Visual()
 
-    visual.visual_show()
+    #visual.visual_show()
 
-
+    for image_batch, label_batch in trainData.train_ds:
+        print(image_batch.shape)
+        print(label_batch.shape)
+        break
+        
 if __name__ == "__main__":
     main()
